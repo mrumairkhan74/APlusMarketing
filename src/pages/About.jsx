@@ -17,7 +17,7 @@ const About = () => {
         {
             name: 'Shah Mehmood Afridi',
             phone: '+92 333 5238989',
-            email: 'smsafridiit@gmail.com',
+            email: 'smafridiit@gmail.com',
             image: 'https://' 
         },
     ];

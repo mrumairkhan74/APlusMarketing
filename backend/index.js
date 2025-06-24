@@ -30,9 +30,9 @@ app.use('/property', propertyRoutes)
 
 
 
-
+const port = process.env.PORT
 
 // server Listening
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Connected Server')
 })

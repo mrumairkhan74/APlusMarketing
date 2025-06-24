@@ -7,7 +7,7 @@ const Loading = () => {
             <div className="animate-bounce">
                 <img
                 title='Loading Logo'
-                    src="https://res.cloudinary.com/mrumairkhan74/image/upload/v1750613892/A_icon_abx9ln.png"
+                    src="https://res.cloudinary.com/mrumairkhan74/image/upload/v1750769146/A_Plus_Logo_wnc4rr.png"
                     className="w-40 h-auto drop-shadow-xl drop-shadow-red-300"
                     alt="A+ Marketing Loader"
                 />

@@ -62,7 +62,7 @@ const Register = () => {
           <form onSubmit={handleSubmit}>
             <div className="flex flex-col items-center mb-6">
               <img
-                src="https://res.cloudinary.com/mrumairkhan74/image/upload/v1750613892/A_logo_iw0zej.png"
+                src="https://res.cloudinary.com/mrumairkhan74/image/upload/v1750769146/A_Plus_Logo_wnc4rr.png"
                 alt="A+ Logo"
                 className="w-20 h-20"
               />

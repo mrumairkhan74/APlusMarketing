@@ -37,7 +37,7 @@ const Home = () => {
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-gray-700">
           {/* Card 1 */}
           <div className="p-6 bg-white border rounded-xl shadow hover:shadow-lg transition duration-300">
-            <div className="flex justify-center mb-4 text-red-600 text-4xl">
+            <div className="flex justify-center mb-4 text-yellow-600 text-4xl">
               <VscWorkspaceTrusted />
             </div>
             <h3 className="font-semibold text-xl mb-2 text-gray-800">Trusted by 1,000+ Clients</h3>
@@ -46,7 +46,7 @@ const Home = () => {
 
           {/* Card 2 */}
           <div className="p-6 bg-white border rounded-xl shadow hover:shadow-lg transition duration-300">
-            <div className="flex justify-center mb-4 text-red-600 text-4xl">
+            <div className="flex justify-center mb-4 text-yellow-600 text-4xl">
               <MdVerifiedUser />
             </div>
             <h3 className="font-semibold text-xl mb-2 text-gray-800">Verified Properties</h3>
@@ -55,7 +55,7 @@ const Home = () => {
 
           {/* Card 3 */}
           <div className="p-6 bg-white border rounded-xl shadow hover:shadow-lg transition duration-300">
-            <div className="flex justify-center mb-4 text-red-600 text-4xl">
+            <div className="flex justify-center mb-4 text-yellow-600 text-4xl">
               <GrUserExpert />
             </div>
             <h3 className="font-semibold text-xl mb-2 text-gray-800">Local Experts</h3>
@@ -65,12 +65,12 @@ const Home = () => {
       </div>
 
       {/* Call to Action */}
-      <div className="bg-red-700 text-white p-6 sm:p-10 rounded-lg text-center my-16 shadow-lg">
+      <div className="bg-yellow-700 text-white p-6 sm:p-10 rounded-lg text-center my-16 shadow-lg">
         <h2 className="text-2xl sm:text-3xl font-bold mb-3">Looking for Your Dream Plot?</h2>
         <p className="mb-6 text-base sm:text-lg">Let A+ Marketing guide your next smart move in real estate.</p>
         <a
           href="/contact"
-          className="bg-white text-red-700 px-6 py-2 text-base sm:text-lg font-semibold rounded hover:bg-gray-100 transition"
+          className="bg-white text-yellow-700 px-6 py-2 text-base sm:text-lg font-semibold rounded hover:bg-gray-100 transition"
         >
           Contact Us Today
         </a>

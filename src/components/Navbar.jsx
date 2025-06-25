@@ -12,8 +12,8 @@ const Navbar = () => {
 
   const navLinkClass = ({ isActive }) =>
     isActive
-      ? 'text-red-600 font-semibold underline underline-offset-4'
-      : 'hover:text-red-500';
+      ? 'text-yellow-600 font-semibold underline underline-offset-4'
+      : 'hover:text-yellow-500';
 
   const handleLogout = () => {
     dispatch(logoutUser())
@@ -27,10 +27,14 @@ const Navbar = () => {
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <NavLink to="/" className="text-xl font-bold text-blue-600 flex items-center gap-2">
+        <NavLink to="/" className="text-xl font-bold text-yellow-600 flex items-center gap-2">
           <img
           title='Logo'
+<<<<<<< HEAD
             src="https://res.cloudinary.com/mrumairkhan74/image/upload/v1750769146/A_Plus_Logo_wnc4rr.png"
+=======
+            src="https://res.cloudinary.com/mrumairkhan74/image/upload/v1750821214/A_Plus_Logo_umdbd2.png"
+>>>>>>> bd88f2e (new update)
             alt="A+ Logo"
             className="w-36 h-20 object-contain mix-blend-darken drop-shadow-lg"
           />
@@ -39,7 +43,7 @@ const Navbar = () => {
         {/* Mobile Menu Toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-3xl text-red-600 focus:outline-none"
+          className="md:hidden text-3xl text-yellow-600 focus:outline-none"
         >
           {isOpen ? <IoClose /> : <IoMenu />}
         </button>
@@ -68,7 +72,7 @@ const Navbar = () => {
               <button
               title='Logout'
                 onClick={handleLogout}
-                className="text-white bg-red-500 p-2 rounded-md hover:bg-red-600 font-medium"
+                className="text-white bg-yellow-500 p-2 rounded-md hover:bg-yellow-600 font-medium"
               >
                 Logout
               </button>

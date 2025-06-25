@@ -29,11 +29,11 @@ const Dashboard = () => {
     }
 
     if (isLoading) return <Loading />;
-    if (isError) return <p className="text-center mt-4 text-red-500">Failed to load properties.</p>;
+    if (isError) return <p className="text-center mt-4 text-yellow-500">Failed to load properties.</p>;
 
     return (
         <div className="px-4 md:px-10 py-6">
-            <h1 className='text-center text-3xl font-mono font-bold p-4 text-red-500 tracking-wide'>Dashboard</h1>
+            <h1 className='text-center text-3xl font-mono font-bold p-4 text-yellow-500 tracking-wide'>Dashboard</h1>
 
             {properties.length === 0 ? (
                 <p className="text-center text-gray-500 mt-10">No properties found.</p>
@@ -57,7 +57,7 @@ const Dashboard = () => {
                                     <p className="text-sm text-gray-500">Address: {property.address}</p>
                                     <p className="text-sm text-gray-500">Area: {property.area}</p>
                                     <h2 className="font-semibold text-base">
-                                        Price: <span className="text-red-500">{property.price} {property.priceUnit}</span>
+                                        Price: <span className="text-yellow-500">{property.price} {property.priceUnit}</span>
                                     </h2>
                                 </div>
                             </div>
@@ -65,7 +65,7 @@ const Dashboard = () => {
                             <div className="flex gap-2 flex-wrap sm:flex-nowrap">
                                 <span
                                     className={`px-3 py-2 text-center rounded-full text-sm font-semibold 
-                                        ${property.status === 'available' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}
+                                        ${property.status === 'available' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-yellow-700'}`}
                                 >
                                     {property.status}
                                 </span>

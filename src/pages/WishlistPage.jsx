@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchWishList, wishlistProperty } from '../features/property/propertySlice';
 import { useNavigate } from 'react-router-dom';
+import Loading from '../components/Loading';
 
 const WishlistPage = () => {
   const dispatch = useDispatch();
@@ -21,11 +22,11 @@ const WishlistPage = () => {
     dispatch(wishlistProperty(id));
   };
 
-  if (isLoading) return <p className="text-center mt-8 text-lg">Loading...</p>;
+  if (isLoading) return <Loading/>;
 
   return (
     <div className="p-4 sm:p-6 max-w-6xl mx-auto">
-      <h1 className="text-2xl sm:text-3xl font-bold mb-6 text-center text-red-500">My Wishlist</h1>
+      <h1 className="text-2xl sm:text-3xl font-bold mb-6 text-center text-yellow-500">My Wishlist</h1>
 
       {wishlistProperties.length === 0 ? (
         <p className="text-center text-gray-600">No properties in wishlist.</p>
@@ -45,7 +46,7 @@ const WishlistPage = () => {
                 <div className="flex flex-col justify-between">
                   <h3 className="text-lg font-semibold">{property.title}</h3>
                   <p className="text-gray-600 text-sm">{property.address}</p>
-                  <p className="text-red-500 font-medium">Rs. {property.price}</p>
+                  <p className="text-yellow-500 font-medium">Rs. {property.price}</p>
                 </div>
               </div>
 

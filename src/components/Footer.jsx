@@ -9,7 +9,7 @@ const Footer = () => {
         
         {/* Brand Info */}
         <div>
-          <h2 className="text-2xl font-bold text-red-500 mb-2">A+ Marketing</h2>
+          <h2 className="text-2xl font-bold text-yellow-500 mb-2">A+ Marketing</h2>
           <p className="text-gray-400 text-sm">
             Your trusted real estate partner in Jinnah Garden and surrounding areas. We sell plots, deliver value, and build trust.
           </p>
@@ -19,10 +19,10 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
           <ul className="space-y-2 text-sm text-gray-300">
-            <li><Link title='Home' to="/" className="hover:text-red-400">Home</Link></li>
-            <li><Link title='Properties' to="/properties" className="hover:text-red-400">Properties</Link></li>
-            <li><Link title='About' to="/about" className="hover:text-red-400">About</Link></li>
-            <li><Link title='Contact' to="/contact" className="hover:text-red-400">Contact</Link></li>
+            <li><Link title='Home' to="/" className="hover:text-yellow-400">Home</Link></li>
+            <li><Link title='Properties' to="/properties" className="hover:text-yellow-400">Properties</Link></li>
+            <li><Link title='About' to="/about" className="hover:text-yellow-400">About</Link></li>
+            <li><Link title='Contact' to="/contact" className="hover:text-yellow-400">Contact</Link></li>
           </ul>
         </div>
 
@@ -30,9 +30,9 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-3">Contact</h3>
           <ul className="space-y-2 text-sm text-gray-300">
-            <li className="flex items-center gap-2"><FaPhoneAlt className="text-red-400" /> +92 335 5500590</li>
-            <li className="flex items-center gap-2"><FaEnvelope className="text-red-400" /> aqibkhan3578@gmail.com</li>
-            <li className="flex items-start gap-2"><FaMapMarkerAlt className="text-red-400 mt-1" /> Main Commercial Area, Jinnah Garden, Islamabad</li>
+            <li className="flex items-center gap-2"><FaPhoneAlt className="text-yellow-400" /> +92 335 5500590</li>
+            <li className="flex items-center gap-2"><FaEnvelope className="text-yellow-400" /> aqibkhan3578@gmail.com</li>
+            <li className="flex items-start gap-2"><FaMapMarkerAlt className="text-yellow-400 mt-1" /> Main Commercial Area, Jinnah Garden, Islamabad</li>
           </ul>
         </div>
 

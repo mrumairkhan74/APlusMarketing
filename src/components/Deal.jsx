@@ -19,7 +19,7 @@ const Deal = () => {
         {dealItems.map((item, i) => (
           <li
             key={i}
-            className="bg-white px-4 py-2 rounded-md text-red-700 font-bold font-mono text-sm sm:text-base shadow transition hover:shadow-lg"
+            className="bg-white px-4 py-2 rounded-md text-yellow-700 font-bold font-mono text-sm sm:text-base shadow transition hover:shadow-lg"
           >
             {item}
           </li>

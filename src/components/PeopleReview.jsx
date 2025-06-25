@@ -49,7 +49,7 @@ const PeopleReview = () => {
                         <StarRating count={review.rating}/>
                         <p className="mt-4 text-gray-700 italic">"{review.message}"</p>
                         <div className="mt-4">
-                            <p className="font-semibold text-lg text-red-800">{review.name}</p>
+                            <p className="font-semibold text-lg text-yellow-800">{review.name}</p>
                             <p className="text-sm text-gray-500">{review.location}</p>
                         </div>
                     </div>

@@ -24,7 +24,7 @@ const Contact = () => {
 
   return (
     <div className="max-w-6xl mx-auto p-6 py-12">
-      <h1 className="text-4xl font-bold mb-6 text-center text-red-700">Contact Us</h1>
+      <h1 className="text-4xl font-bold mb-6 text-center text-yellow-700">Contact Us</h1>
 
       <div className="grid md:grid-cols-2 gap-10 items-start">
         {/* Contact Form */}
@@ -55,7 +55,7 @@ const Contact = () => {
             className="w-full p-2 border rounded h-32"
             required
           />
-          <button type="submit" title='Submit' className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">
+          <button type="submit" title='Submit' className="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700">
             Send Message
           </button>
           {status && <p className="text-sm text-gray-600 mt-2">{status}</p>}

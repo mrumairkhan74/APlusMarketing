@@ -25,7 +25,7 @@ const PropertyCard = () => {
   };
 
   if (isLoading) return <Loading />;
-  if (isError) return <p className="text-center text-red-500">Error: {message}</p>;
+  if (isError) return <p className="text-center text-yellow-500">Error: {message}</p>;
 
   return (
     <>
@@ -54,11 +54,11 @@ const PropertyCard = () => {
                 <p className="text-sm text-gray-600">📏 Area: {property.area}</p>
 
                 <div className="flex justify-between items-center mt-2">
-                  <p className="text-xl font-semibold text-red-600">Rs. {property.price} {property.priceUnit}</p>
+                  <p className="text-xl font-semibold text-yellow-600">Rs. {property.price} {property.priceUnit}</p>
 
                   <span
                     className={`inline-flex items-center gap-1 px-3 py-1 rounded-full text-sm font-medium
-                    ${isAvailable ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}
+                    ${isAvailable ? 'bg-green-100 text-green-700' : 'bg-yellow-100 text-yellow-700'}`}
                   >
                     {isAvailable ? (
                       <>
@@ -72,15 +72,15 @@ const PropertyCard = () => {
                       </>
                     )}
                   </span>
-                </div>
+                </div> 
 
                 <button
                   onClick={() => handleWishList(property._id)}
                   title='WishList'
                   className={`mt-2 px-3 py-2 text-sm rounded-full flex items-center justify-center gap-2 transition-all duration-200
                   ${isWishlisted
-                      ? 'bg-red-600 text-white hover:bg-red-700'
-                      : 'border border-red-600 text-red-600 hover:bg-red-100'}`}
+                      ? 'bg-yellow-600 text-white hover:bg-yellow-700'
+                      : 'border border-yellow-600 text-yellow-600 hover:bg-yellow-100'}`}
                 >
                   {isWishlisted ? (
                     <>
@@ -96,7 +96,7 @@ const PropertyCard = () => {
                 <Link
                 title='View More'
                   to={`/property/${property._id}`}
-                  className="text-blue-600 text-sm mt-3 underline hover:text-blue-800"
+                  className="text-yellow-600 text-sm mt-3 underline hover:text-yellow-800"
                 >
                   View Details
                 </Link>

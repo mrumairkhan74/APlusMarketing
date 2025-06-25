@@ -20,9 +20,9 @@ const CreatePropertyPage = () => {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-red-100 px-4 sm:px-6 lg:px-8">
+        <div className="min-h-screen flex items-center justify-center bg-yellow-100 px-4 sm:px-6 lg:px-8">
             <div className="bg-white shadow-lg rounded-2xl p-6 sm:p-8 w-full max-w-lg">
-                <h2 className="text-2xl sm:text-3xl font-bold text-red-600 mb-6 text-center">
+                <h2 className="text-2xl sm:text-3xl font-bold text-yellow-600 mb-6 text-center">
                     Create Property
                 </h2>
 
@@ -30,11 +30,11 @@ const CreatePropertyPage = () => {
 
                 {/* Feedback messages */}
                 <div className="mt-4 text-center">
-                    {isLoading && <p className="text-red-600">Creating property...</p>}
+                    {isLoading && <p className="text-yellow-600">Creating property...</p>}
                     {isSuccess && (
                         <p className="text-green-600">Property created successfully!</p>
                     )}
-                    {isError && <p className="text-red-600">{message}</p>}
+                    {isError && <p className="text-yellow-600">{message}</p>}
                 </div>
             </div>
         </div>

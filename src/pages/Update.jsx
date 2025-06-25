@@ -101,7 +101,7 @@ const Update = () => {
                 <button
                 title='update'
                     type="submit"
-                    className="w-full bg-red-500 text-white py-2 rounded hover:bg-red-600"
+                    className="w-full bg-yellow-500 text-white py-2 rounded hover:bg-yellow-600"
                 >
                     Update Property
                 </button>

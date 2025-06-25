@@ -30,12 +30,8 @@ const Navbar = () => {
         <NavLink to="/" className="text-xl font-bold text-yellow-600 flex items-center gap-2">
           <img
           title='Logo'
-<<<<<<< HEAD
-            src="https://res.cloudinary.com/mrumairkhan74/image/upload/v1750769146/A_Plus_Logo_wnc4rr.png"
-=======
             src="https://res.cloudinary.com/mrumairkhan74/image/upload/v1750821214/A_Plus_Logo_umdbd2.png"
->>>>>>> bd88f2e (new update)
-            alt="A+ Logo"
+          alt="A+ Logo"
             className="w-36 h-20 object-contain mix-blend-darken drop-shadow-lg"
           />
         </NavLink>

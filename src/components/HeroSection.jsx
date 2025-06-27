@@ -15,7 +15,7 @@ const HeroSection = () => {
       <Background />
 
       <div className="absolute inset-0 flex flex-col items-center justify-center z-20 text-center px-4">
-        <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold m-4">
+        <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold m-4">
           Welcome to{' '}
           <span className="text-yellow-500">
             <Typewriter

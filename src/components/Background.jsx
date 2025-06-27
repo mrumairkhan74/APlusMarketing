@@ -6,6 +6,7 @@ const Background = () => {
       <img
         title='main BG'
         src="./images/bgmain.webp"
+        loading="lazy"
         className="w-full h-full object-cover brightness-50 rounded-tl-[100px] rounded-br-[100px]"
         alt="Luxury real estate background"
       />

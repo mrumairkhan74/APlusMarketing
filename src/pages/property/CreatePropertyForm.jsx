@@ -4,7 +4,8 @@ const CreatePropertyForm = ({ onSubmit }) => {
     const [formData, setFormData] = useState({
         title: '',
         address: '',
-        description:''
+        description:'',
+        contact:'',
     });
 
     const [image, setImage] = useState(null);
@@ -28,7 +29,7 @@ const CreatePropertyForm = ({ onSubmit }) => {
         data.append('title', formData.title);
         data.append('address', formData.address);
         data.append('description', formData.description);
-        
+        data.append('contact',formData.contact);
         if (image) data.append('image', image);
 
         onSubmit(data);
@@ -79,8 +80,18 @@ const CreatePropertyForm = ({ onSubmit }) => {
                 />
             </div>
 
-            {/* Price & Unit */}
-            
+            {/* Contact*/}
+            <div>
+                <label className="block text-yellow-700 font-semibold mb-1">Contact No.</label>
+                <input
+                    type="number"
+                    name="contact"
+                    value={formData.contact}
+                    onChange={handleChange}
+                    className="w-full p-2 border border-yellow-300 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                    required
+                />
+            </div>
 
             {/* Image Upload */}
             <div>

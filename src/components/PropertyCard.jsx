@@ -52,7 +52,7 @@ const PropertyCard = () => {
                 <h2 className="text-2xl font-bold text-gray-800">{property.title}</h2>
                 <p className="text-sm text-gray-600">📍Address {property.address}</p>
                 <p className="text-sm text-gray-600">📏 Description: {property.description}</p>
-
+<p className="text-sm text-gray-600">📞 Contact: {property.contact}</p>
                 <div className="flex justify-between items-center mt-2">
 
                   <span

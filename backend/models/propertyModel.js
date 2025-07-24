@@ -9,20 +9,12 @@ const propertySchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    area: {
+    description: {
         type: String,
         required: true
     },
 
-    price: {
-        type: Number,
-        required: true
-      },
-      priceUnit: {
-        type: String,
-        enum: ['lac', 'crore'],
-        default: 'lac'
-      },      
+    
     image: {
         url: String,
         public_id: String,

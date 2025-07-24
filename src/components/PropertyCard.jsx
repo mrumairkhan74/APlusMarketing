@@ -50,8 +50,8 @@ const PropertyCard = () => {
 
               <div className="p-5 flex flex-col gap-3">
                 <h2 className="text-2xl font-bold text-gray-800">{property.title}</h2>
-                <p className="text-sm text-gray-600">📍 {property.address}</p>
-                <p className="text-sm text-gray-600">📏 Area: {property.description}</p>
+                <p className="text-sm text-gray-600">📍Address {property.address}</p>
+                <p className="text-sm text-gray-600">📏 Description: {property.description}</p>
 
                 <div className="flex justify-between items-center mt-2">
 

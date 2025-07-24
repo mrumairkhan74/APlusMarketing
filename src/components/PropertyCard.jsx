@@ -51,10 +51,9 @@ const PropertyCard = () => {
               <div className="p-5 flex flex-col gap-3">
                 <h2 className="text-2xl font-bold text-gray-800">{property.title}</h2>
                 <p className="text-sm text-gray-600">📍 {property.address}</p>
-                <p className="text-sm text-gray-600">📏 Area: {property.area}</p>
+                <p className="text-sm text-gray-600">📏 Area: {property.description}</p>
 
                 <div className="flex justify-between items-center mt-2">
-                  <p className="text-xl font-semibold text-yellow-600">Rs. {property.price} {property.priceUnit}</p>
 
                   <span
                     className={`inline-flex items-center gap-1 px-3 py-1 rounded-full text-sm font-medium

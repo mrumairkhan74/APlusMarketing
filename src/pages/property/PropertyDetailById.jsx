@@ -31,8 +31,8 @@ const PropertyDetailById = () => {
           <div className="flex flex-col">
             <h1 className='text-7xl font-bold tracking-wide font-mono p-2 m-3'>Title:{selectedProperty.title}</h1>
             <p className='text-4xl tracking-wide font-mono  p-2 m-3'> Address: <span className='text-gray-500'> {selectedProperty.address}</span></p>
-            <p className='text-3xl tracking-wide font-mono  p-2 m-3'>Area: <span className='text-gray-500'>{selectedProperty.area}</span> </p>
-            <h2 className='text-5xl text-yellow-500 font-bold tracking-wide font-mono p-2 m-3'>Price: {selectedProperty.price}</h2>
+            <p className='text-3xl tracking-wide font-mono  p-2 m-3'>Description: <span className='text-gray-500'>{selectedProperty.description}</span> </p>
+            <h2 className='text-5xl text-yellow-500 font-bold tracking-wide font-mono p-2 m-3'>Contact No: {selectedProperty.contact}</h2>
             <a href="tel:'+923355500590'" className="bg-yellow-500 p-2 text-white m-3 rounded-md text-2xl">Call Now</a>
           </div>
         </div>

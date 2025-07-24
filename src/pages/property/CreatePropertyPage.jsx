@@ -30,11 +30,11 @@ const CreatePropertyPage = () => {
 
                 {/* Feedback messages */}
                 <div className="mt-4 text-center">
-                    {isLoading && <p className="text-yellow-600">Creating property...</p>}
-                    {isSuccess && (
+                    {!isLoading && <p className="text-yellow-600">Creating property...</p>}
+                    {!isSuccess && (
                         <p className="text-green-600">Property created successfully!</p>
                     )}
-                    {isError && <p className="text-yellow-600">{message}</p>}
+                    {!isError && <p className="text-yellow-600">{message}</p>}
                 </div>
             </div>
         </div>

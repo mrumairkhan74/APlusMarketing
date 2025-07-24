@@ -13,7 +13,10 @@ const propertySchema = new mongoose.Schema({
         type: String,
         required: true
     },
-
+contact:{
+    type:Number,
+    required:true
+},
     
     image: {
         url: String,

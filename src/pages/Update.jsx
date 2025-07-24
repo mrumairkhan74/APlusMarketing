@@ -12,8 +12,7 @@ const Update = () => {
 
     const [formData, setFormData] = useState({
         title: '',
-        price: '',
-        location: '',
+        address: '',
         description: '',
         status: 'available' // default status
     })
@@ -27,8 +26,7 @@ const Update = () => {
         if (selected) {
             setFormData({
                 title: selected.title || '',
-                price: selected.price || '',
-                location: selected.location || '',
+                address: selected.address || '',
                 description: selected.description || '',
                 status: selected.status || 'Available',
             })
@@ -74,11 +72,11 @@ const Update = () => {
                     disabled={true}
                 />
 
-                <label className="block mb-2">Price</label>
+                <label className="block mb-2">Description</label>
                 <input
                     type="number"
-                    name="price"
-                    value={formData.price}
+                    name="description"
+                    value={formData.description}
                     onChange={handleChange}
                     className="w-full p-2 border rounded mb-4"
                     required

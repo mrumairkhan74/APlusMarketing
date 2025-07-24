@@ -5,7 +5,7 @@ const { Readable } = require('stream');
 // create Property
 const createProperty = async (req, res) => {
     try {
-        const { title, address, area, price, priceUnit } = req.body;
+        const { title, address, description } = req.body;
 
         if (!req.file) {
             return res.status(400).json({ error: 'No image uploaded' });
@@ -38,9 +38,7 @@ const createProperty = async (req, res) => {
         const property = await PropertyDetail.create({
             title,
             address,
-            area,
-            price,
-            priceUnit, // ✅ Add this field to save unit
+            description,// ✅ Add this field to save unit
             image: {
                 url: cloudinaryResult.secure_url,
                 public_id: cloudinaryResult.public_id
